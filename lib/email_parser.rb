@@ -10,7 +10,7 @@ attr_accessor :emails, :email_list
 
 @@email_list = []
 
-def initialize(emails)
+def self.create(emails)
   # @emails = emails
   # # email_list.save
   # @@email_list << emails
