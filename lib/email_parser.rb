@@ -13,7 +13,7 @@ attr_accessor :emails, :email_list
 def initialize(emails)
   @emails = emails
   # email_list.save
-  @@email_list << email_list
+  @@email_list << emails
 end
 
 # def self.create(emails)
