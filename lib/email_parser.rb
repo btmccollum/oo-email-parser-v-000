@@ -10,11 +10,17 @@ attr_accessor :emails
 
 @@email_list = []
 
-def self.create(emails)
+def initialize(emails)
   email_list = self.new(emails)
   email_list.save
   email_list
 end
+
+# def self.create(emails)
+#   email_list = self.new(emails)
+#   email_list.save
+#   email_list
+# end
 
 def self.parse
   @@email_list.split(/[\s,]/)
