@@ -14,7 +14,10 @@ def initialize(emails)
   # @emails = emails
   # # email_list.save
   # @@email_list << emails
-  parser = emails.new
+  parser = self.new
+  parser.emails = emails
+  parser.save
+  parser
 end
 
 # def self.create(emails)
