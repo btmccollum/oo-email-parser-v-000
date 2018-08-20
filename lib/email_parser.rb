@@ -11,7 +11,7 @@ attr_accessor :emails, :email_list
 @@email_list = []
 
 def initialize(emails)
-  email_list = emails
+  @emails = emails
   # email_list.save
   @@email_list << email_list
 end
@@ -23,7 +23,7 @@ end
 # end
 
 def self.parse
-  @@email_list.split(/[\s,]/) 
+  @@email_list.split(/[\s,]/)
 end
 
 def self.all
