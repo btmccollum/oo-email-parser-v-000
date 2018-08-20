@@ -9,7 +9,18 @@ attr_accessor :emails
 
 @@email_list = []
 
+def self.create(emails)
+  new_list = self.new
+  new_list.save
+  new_list
+end
 
+def self.all
+  @@email_list
+end
 
+def save
+  self.class.all << self
+end
 
 end
