@@ -23,7 +23,7 @@ end
 # end
 
 def self.parse
-  @@email_list.split(/[\s,]/)
+  @@email_list.split(/[\s,]/) 
 end
 
 def self.all
