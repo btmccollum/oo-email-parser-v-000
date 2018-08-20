@@ -11,9 +11,10 @@ attr_accessor :emails, :email_list
 @@email_list = []
 
 def initialize(emails)
-  @emails = emails
-  # email_list.save
-  @@email_list << emails
+  # @emails = emails
+  # # email_list.save
+  # @@email_list << emails
+  parser = emails.new 
 end
 
 # def self.create(emails)
