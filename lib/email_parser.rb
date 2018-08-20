@@ -16,6 +16,10 @@ def self.create(emails)
   new_list
 end
 
+def self.parse
+  @@email_list.split(/[\s,]/)
+end
+
 def self.all
   @@email_list
 end
