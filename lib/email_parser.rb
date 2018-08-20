@@ -11,7 +11,7 @@ attr_accessor :emails
 @@email_list = []
 
 def initialize(emails)
-  email_list = self(emails)
+  email_list = emails
   email_list.save
   email_list
 end
